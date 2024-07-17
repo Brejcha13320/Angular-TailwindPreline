@@ -1,0 +1,14 @@
+<!-- Sidebar -->
+<div class="w-full h-full overflow-y-auto bg-gray-200 dark:bg-gray-500">
+  <ul>
+    <li *ngFor="let option of options" class="">
+      <button
+        class="w-full py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold border border-transparent disabled:opacity-50 disabled:pointer-events-none text-blue-600 hover:text-white hover:bg-blue-800 dark:text-white dark:hover:text-white"
+        [routerLink]="option.path"
+        routerLinkActive="bg-blue-800 text-white"
+      >
+        {{ option.name }}
+      </button>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,16 @@
+<button
+  (click)="toggleDarkMode()"
+  type="button"
+  class="hs-dark-mode-active:hidden block hs-dark-mode group flex items-center text-gray-600 hover:text-blue-600 font-medium dark:text-neutral-400 dark:hover:text-neutral-500"
+  data-hs-theme-click-value="dark"
+>
+  <img src="assets/svg/dark.svg" alt="" />
+</button>
+<button
+  (click)="toggleDarkMode()"
+  type="button"
+  class="hs-dark-mode-active:block hidden hs-dark-mode group flex items-center text-gray-600 hover:text-blue-600 font-medium dark:text-neutral-400 dark:hover:text-neutral-500"
+  data-hs-theme-click-value="light"
+>
+  <img src="assets/svg/light.svg" alt="" />
+</button>
